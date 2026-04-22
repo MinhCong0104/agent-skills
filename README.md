@@ -40,6 +40,7 @@ In-depth guides written specifically for AI consumption:
 
 | Skill | Description |
 |-------|-------------|
+| **[Odoo 17.0](skills/odoo-17.0/)** | Odoo 17 development (tree views, direct-expression attrs, `group_operator=`, `_sql_constraints`, JSONB translations, OWL 2.8) |
 | **[Odoo 18.0](skills/odoo-18.0/)** | Odoo 18 development (ORM, views, security, OWL, reports, migrations, performance) |
 | **[Odoo 19.0](skills/odoo-19.0/)** | Odoo 19 development guide with current conventions |
 | **[DTG Base](skills/dtg-base/)** | DTGBase utilities (date/period, timezone, batch, barcode, Vietnamese text) |
@@ -130,7 +131,7 @@ graph LR
 | Metric | Value |
 |--------|-------|
 | Documentation | 10,000+ lines |
-| Skill packs | 10 (Odoo 18.0, 19.0, DTG Base, Payment, Code Review, Brainstorming, Writing Skills, MCP Builder, Slide, Visual Explainer) |
+| Skill packs | 11 (Odoo 17.0, 18.0, 19.0, DTG Base, Payment, Code Review, Brainstorming, Writing Skills, MCP Builder, Slide, Visual Explainer) |
 | Agents | 3 (Odoo Code Review, Odoo Code Tracer, Planner) |
 | License | MIT |
 

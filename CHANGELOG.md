@@ -7,6 +7,40 @@ All notable changes to this project will be documented in this file.
 ### Added
 - TODO: Add upcoming changes here.
 
+## [1.0.9]
+
+### Release Description
+Added the `odoo-17.0` skill pack: 18 reference guides plus `SKILL.md`, `CLAUDE.md`, `AGENTS.md`, all verified against the Odoo 17 source tree.
+
+### Added
+- New skill pack `skills/odoo-17.0/` covering Odoo 17 development:
+  - `SKILL.md`, `CLAUDE.md`, `AGENTS.md` (master index, Claude Code guide, IDE setup)
+  - 18 reference guides in `skills/odoo-17.0/references/`: actions, controller, data, decorator, development, field, manifest, migration, mixins, model, owl, performance, reports, security, testing, transaction, translation, view
+- Documented v17-specific conventions that differ from v18/v19:
+  - `<tree>` list tag (v18 renamed to `<list>`)
+  - Direct expression attributes `invisible="state == 'done'"` — v17 removed the legacy `attrs="{...}"` and `states="..."` forms (the view validator raises `ValidationError` since 17.0)
+  - `group_operator=` field aggregation (v18 renamed to `aggregator=`)
+  - `_sql_constraints` tuple form (v19 introduced `models.Constraint`)
+  - `index=True` on fields (v19 introduced `models.Index`)
+  - `cr.execute()` with plain SQL as the primary pattern (v18 added `env.execute_query_dict()`)
+  - `read_group()` as the public API (v18 deprecated it in favor of `_read_group()` / `formatted_read_group()`)
+  - Kanban templates still use `t-name="kanban-box"` (v19 renamed to `t-name="card"`)
+  - Explicit `<div class="oe_chatter">` with `message_follower_ids` / `activity_ids` / `message_ids` (v18 introduced the `<chatter/>` shortcut)
+  - `res.groups.category_id` (v19 introduced `privilege_id`)
+  - `@api.private` decorator and `@api.ondelete(at_uninstall=False)` are available in v17
+  - JSONB-based field translations (no `ir.translation` rows for model fields since v16)
+  - Module hooks `pre_init_hook(env)` / `post_init_hook(env)` / `uninstall_hook(env)` all take `env`
+  - Migration script entry `def migrate(cr, installed_version):` in `migrations/17.0.X.Y.Z/`
+  - Module version string format `17.0.X.Y.Z`
+  - `web.assets_common` was merged into `web.assets_frontend` before v17 shipped
+- Example manifests use `'author': 'UncleCat'` and every module skeleton includes `i18n/` with a `.pot` template.
+
+### Changed
+- Updated root `README.md` skills table to list the new `odoo-17.0` pack.
+
+### Build
+- Bumped package version in `package.json` from `1.0.8` to `1.0.9`.
+
 ## [1.0.8]
 
 ### Release Description
