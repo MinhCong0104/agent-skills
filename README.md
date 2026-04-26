@@ -2,7 +2,7 @@
 
 # Agent Skills
 
-![Agent Skills Hero](lib/image/header.png)
+![Agent Skills Hero](lib/image/header-new.png)
 
 **Curated AI skill packs for Odoo, payments, and MCP — 55k+ lines of framework expertise for your AI coding assistant.**
 
