@@ -52,7 +52,7 @@ Think of it as a **"knowledge pack"** — when you add Agent Skills to your proj
 | Generic "how to write a Python function" | Framework-specific "how to write an Odoo 18 model with proper ORM patterns" |
 | AI guesses at framework conventions | AI follows documented best practices |
 | You re-explain project context every session | Context lives in the repo — AI reads it automatically |
-| Subtle bugs from outdated or mixed-version advice | Version-pinned guides (Odoo 17 / 18 / 19) |
+| Subtle bugs from outdated or mixed-version advice | Version-pinned guides (Odoo 16 / 17 / 18 / 19) |
 | Generic security suggestions | Enforced security rules for enterprise applications |
 
 ---
@@ -102,7 +102,7 @@ def _compute_total(self):
 <td valign="top">
 
 ```python
-# Odoo conventions (17 / 18 / 19):
+# Odoo conventions (16 / 17 / 18 / 19):
 # Monetary + @api.depends + store
 total_with_tax = fields.Monetary(
     compute='_compute_total_with_tax',
@@ -132,6 +132,7 @@ In-depth guides written specifically for AI consumption:
 
 | Skill | Description |
 |-------|-------------|
+| **[Odoo 16.0](skills/odoo-16.0/)** | Odoo 16 development (tree views, direct-expression attrs, `group_operator=`, `_sql_constraints`, classic chatter / kanban patterns) |
 | **[Odoo 17.0](skills/odoo-17.0/)** | Odoo 17 development (tree views, direct-expression attrs, `group_operator=`, `_sql_constraints`, JSONB translations, OWL 2.8) |
 | **[Odoo 18.0](skills/odoo-18.0/)** | Odoo 18 development (ORM, views, security, OWL, reports, migrations, performance) |
 | **[Odoo 19.0](skills/odoo-19.0/)** | Odoo 19 development guide with current conventions |
@@ -149,13 +150,13 @@ Specialized agents that act as senior technical leads:
 
 | Agent | What it does |
 |-------|--------------|
-| **[Odoo Code Review](agents/odoo-code-review/SKILL.md)** | Reviews Odoo code with scoring and structured feedback. Version-aware (17 / 18 / 19). |
-| **[Odoo Code Tracer](agents/odoo-code-tracer/SKILL.md)** | Traces execution flow from an entry point through the call graph. Version-aware (17 / 18 / 19). |
+| **[Odoo Code Review](agents/odoo-code-review/SKILL.md)** | Reviews Odoo code with scoring and structured feedback. Version-aware (16 / 17 / 18 / 19). |
+| **[Odoo Code Tracer](agents/odoo-code-tracer/SKILL.md)** | Traces execution flow from an entry point through the call graph. Version-aware (16 / 17 / 18 / 19). |
 | **[Planner](agents/planner.md)** | Breaks down complex features into actionable implementation steps |
 
 #### Targeting an Odoo version
 
-The Odoo agents automatically pick the right reference pack (`skills/odoo-17.0/`, `odoo-18.0/`, or `odoo-19.0/`). Resolution order:
+The Odoo agents automatically pick the right reference pack (`skills/odoo-16.0/`, `odoo-17.0/`, `odoo-18.0/`, or `odoo-19.0/`). Resolution order:
 
 1. **Explicit argument** passed to the agent (`odoo_version: "19.0"`).
 2. **Project config**, in order: `.odoo-version` file at the repo root, `odoo_version` in `.claude/odoo.json`, `odoo.version` in `package.json`, or `tool.odoo.version` in `pyproject.toml`.
@@ -180,6 +181,7 @@ Enforced patterns for consistent, secure code:
 ```
 agent-skills/
 ├── skills/
+│   ├── odoo-16.0/             # Odoo 16 guides
 │   ├── odoo-17.0/             # Odoo 17 guides
 │   ├── odoo-18.0/             # Odoo 18 guides
 │   ├── odoo-19.0/             # Odoo 19 guides
@@ -239,7 +241,7 @@ flowchart LR
 | Metric | Value |
 |--------|-------|
 | Documentation | 55,000+ lines |
-| Skill packs | 10 (Odoo 17.0, 18.0, 19.0, DTG Base, Payment, Code Review, Brainstorming, Writing Skills, MCP Builder, Slide) |
+| Skill packs | 11 (Odoo 16.0, 17.0, 18.0, 19.0, DTG Base, Payment, Code Review, Brainstorming, Writing Skills, MCP Builder, Slide) |
 | Agents | 3 (Odoo Code Review, Odoo Code Tracer, Planner) |
 | License | MIT |
 
