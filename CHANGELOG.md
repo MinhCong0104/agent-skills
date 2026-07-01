@@ -2,23 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.11]
-
-### Release Description
-Added the `odoo-16.0` skill pack so the Odoo agents resolve 16.0 explicitly instead of applying 17/18/19-only guidance to Odoo 16 code.
-
-### Added
-- `skills/odoo-16.0/` — full Odoo 16 reference pack: `SKILL.md`, `AGENTS.md`, `CLAUDE.md`, `references/api-highlights.md`, and version-specific guides for actions, controllers, data files, decorators, development workflow, fields, manifest, migrations, mixins, models, OWL, performance, reports, security, testing, transactions, translations, and views.
-
-### Changed
-- `.claude-plugin` metadata and `README.md` register the Odoo 16.0 pack.
-- `agents/odoo-code-review/SKILL.md` and `agents/odoo-code-tracer/SKILL.md` are now version-aware for **16 / 17 / 18 / 19** (resolution order and supported-versions list include 16.0).
-
-### Notes
-- Supported version matrix: **16.0, 17.0, 18.0, 19.0**.
-- Adds #15.
-
-## [1.0.10]
+## [Unreleased]
 
 ### Release Description
 Made the Odoo agents version-aware (17 / 18 / 19) so they load the right reference pack automatically instead of always citing Odoo 18 APIs. Also fixed broken guide paths in `odoo-code-review`.
