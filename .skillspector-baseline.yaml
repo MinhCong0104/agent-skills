@@ -3,10 +3,6 @@
 version: 1
 rules: []
 fingerprints:
-- hash: sha256:7194e574209afd81
-  rule_id: AS3
-  file: odoo-code-review/agent.md
-  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
 - hash: sha256:ef7a1c37735a98b9
   rule_id: E1
   file: dtg-base/odoo-18-dtg-base-guide.md
@@ -19,7 +15,7 @@ fingerprints:
   rule_id: E1
   file: dtg-base/odoo-18-dtg-base-guide.md
   reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
-- hash: sha256:5780cda56963b9bb
+- hash: sha256:3519bca91401f9ac
   rule_id: EA2
   file: code-review/SKILL.md
   reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
@@ -43,6 +39,14 @@ fingerprints:
   rule_id: MP2
   file: odoo-19.0/SKILL.md
   reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:111438384dd3890a
+  rule_id: PE3
+  file: odoo-16.0/references/odoo-16-mixins-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:fd6639ce43957d1a
+  rule_id: PE3
+  file: odoo-16.0/references/odoo-16-mixins-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
 - hash: sha256:e2e08bc51dd7205a
   rule_id: PE3
   file: odoo-17.0/references/odoo-17-mixins-guide.md
@@ -50,6 +54,90 @@ fingerprints:
 - hash: sha256:aeca703225cf5f81
   rule_id: PE3
   file: odoo-17.0/references/odoo-17-mixins-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:32e895697b1b01bb
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-data-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:4e6508f9747120cf
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-data-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:8c42cfe9776f842a
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-reports-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:08ff2dca898f34d9
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-reports-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:5d08f30ed63bcad0
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-reports-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:b1f0a8671ed545cf
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-reports-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:6406728107e7ac1c
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:50a32710c261f4d5
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:3e292974b5940ab8
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:0a12dc87035a1ce1
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:d8a9da6051a933ac
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:85d95892cb9a581a
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:53e75dc23c99b19c
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:65867e11731b5844
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:04df6fb1d02a81b3
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:ebae99a4cd3c4fc1
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:e9e967f1f85598a1
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:0976b7c11873153f
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:c8327cf9aa7f7e49
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:a9e703caf9558226
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
+  reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
+- hash: sha256:3b17705c01f88d8b
+  rule_id: P2
+  file: odoo-16.0/references/odoo-16-view-guide.md
   reason: 'Accepted: low-confidence doc false-positives + by-design cross-skill composition'
 - hash: sha256:9a4ea2edbce64440
   rule_id: P2
