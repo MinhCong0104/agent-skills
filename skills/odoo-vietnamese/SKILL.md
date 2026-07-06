@@ -6,6 +6,8 @@ description: Phát triển Odoo bằng tiếng Việt cho dự án nội bộ
 # Luôn áp dụng các quy tắc sau:
 
 - Sử dụng skill vietnamese-developer.
+- Sử dụng skill ponytail.
+- Sử dụng skill caveman.
 - Tự động phát hiện phiên bản Odoo đang dùng để lựa chọn skill phù hợp.:
   - Nếu module có depends hoặc manifest của Odoo 16 → dùng odoo-16.
   - Nếu là Odoo 17 → dùng odoo-17.
