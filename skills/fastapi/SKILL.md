@@ -45,17 +45,11 @@ Bắt buộc áp dụng 2 skills sau:
 Ưu tiên kiến trúc:
 
 Router
-
 ↓
-
 Service
-
 ↓
-
 Repository
-
 ↓
-
 Database
 
 Trong đó:
